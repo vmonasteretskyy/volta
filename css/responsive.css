@@ -124,6 +124,38 @@
         padding-bottom: 190px;
     }
 
+    /* contact page */
+    .contact-lists .row {
+        justify-content: space-between;
+    }
+
+    .contact-lists {
+        padding-top: 145px;
+    }
+
+    .list-box__title {
+        font-size: 18px;
+    }
+
+    .list-box__list li a {
+        font-size: 12px;
+    }
+
+    .contact-form__title {
+        font-size: 18px;
+    }
+
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 12px;
+        height: 28px;
+    }
+
+    .contact-lists .col-lg-2 {
+        -ms-flex: 0 0 19%;
+        flex: 0 0 19%;
+        max-width: 20%;
+    }
 
 }
 
@@ -162,6 +194,27 @@
     .bg-animate {
         display: none;
     }
+
+
+    .contact-lists .row {
+        justify-content: start;
+    }
+
+
+
+
+
+
+
+
+
+
+    .contact-lists,
+    .map-section,
+    .contact-form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media(max-width: 960.8px) {
@@ -182,6 +235,18 @@
 
     .change-text__hiden {
         bottom: -10px;
+    }
+
+    .contact-lists .col-lg-2 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    .contact-lists .row .col-lg-2:nth-child(1),
+    .contact-lists .row .col-lg-2:nth-child(2),
+    .contact-lists .row .col-lg-2:nth-child(3) {
+        margin-bottom: 25px;
     }
 }
 
@@ -449,7 +514,6 @@
 
 
 
-
     .estimate__bottomsect p {
         font-size: 24px;
     }
@@ -464,10 +528,77 @@
         font-size: 14px;
     }
 
+    .contact-lists,
+    .map-section,
+    .contact-form {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }
 
 @media(max-width:575.8px) {
     body {
         background-image: url(../image/phone-bg.png);
+    }
+
+    .contact-lists .col-lg-2 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .list-box {
+        text-align: center;
+    }
+
+    .contact-lists {
+        padding-top: 135px;
+    }
+
+    .list-box__title {
+        font-size: 24px;
+    }
+
+    .list-box__list li a {
+        font-size: 13px;
+    }
+
+    .list-box__list li:last-child a:last-child {
+        margin-right: 0;
+    }
+
+    .contact-lists .row .col-lg-2 {
+        margin-bottom: 20px !important;
+    }
+
+    body.contact-page {
+        background-image: url(../image/phone-bg-contact.png);
+        background-size: cover;
+    }
+
+    .contact-form__title {
+        text-align: center;
+    }
+
+    .contact-form__title br {
+        display: inline-block;
+    }
+
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        height: 25px;
+    }
+
+    .contact-form textarea {
+        margin-bottom: 25px;
+    }
+
+    .submit-box input {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding-bottom: 80px;
     }
 }
