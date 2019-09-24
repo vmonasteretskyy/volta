@@ -32,6 +32,9 @@ $(document).ready(function () {
         $('.header__nav').hide();
     });
 
-    // scroll
+
+
+
 
 });
+
