@@ -669,7 +669,9 @@ main {
 
 .map-section {
     position: relative;
-    margin: 40px 0 70px 0;
+    /* margin: 40px 0 70px 0; */
+    width: 70%;
+    margin: 40px auto 70px;
 }
 
 .map-section>img {
@@ -958,12 +960,40 @@ body.about-page {
     margin-bottom: 20px;
 }
 
+.range-slider p {
+    color: #fff;
+    margin-bottom: 35px;
+}
 
+.range__point {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 11px solid #2284e5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030a2e;
+}
 
+.range__point.violet {
+    border-color: #7f2be5;
+}
 
+.range__point.pink {
+    border-color: #c901ad;
+}
 
-
-
+.range__point.red {
+    border-color: #eb0144;
+}
 
 
 

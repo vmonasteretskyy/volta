@@ -170,6 +170,9 @@
 }
 
 @media(max-width: 991.8px) {
+    .map-section {
+        width: 100%;
+    }
 
     .main-topscreen,
     .main-secondscreen,
