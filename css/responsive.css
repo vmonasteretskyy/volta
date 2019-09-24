@@ -157,6 +157,67 @@
         max-width: 20%;
     }
 
+    /* ABOUT PAGE */
+    .printtext {
+        padding-top: 150px;
+        margin-bottom: 70px;
+    }
+
+    .about-textbox p {
+        margin-bottom: 45px;
+    }
+
+    .brands__sect a .brand {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .brands__sect {
+        justify-content: space-between;
+    }
+
+    .about-textbox {
+        margin-bottom: 90px;
+    }
+
+    .range__point {
+        width: 45px;
+        height: 45px;
+        border: 10px solid #2284e5;
+    }
+
+    .innovative__title {
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    .innovative__title br {
+        display: none;
+    }
+
+    .about-bottsect .container .row .col-lg-4.col-md-4:first-child .innovative__title br {
+        display: inline-block;
+    }
+
+    .about-bottsect .container .row .col-lg-4.col-md-4:nth-child(3) .innovative__title {
+        padding-left: 0;
+    }
+
+    .about-bottsect .container .row .col-lg-4.col-md-4:nth-child(3) .innovative__descr {
+        padding-left: 0;
+    }
+
+    .range__line {
+        width: 723px;
+    }
+
+    .range__line p {
+        opacity: .5;
+        font-size: 10px;
+        position: relative;
+        z-index: 2;
+        padding-right: 26px;
+    }
 }
 
 @media(max-width:1020.8px) {
@@ -203,14 +264,35 @@
         justify-content: start;
     }
 
+    body.about-page {
+        background-image: url(../image/tablet-bg-about.png);
+    }
+
+    body.contact-page {
+        background-image: url(../image/tablet-bg-contact.png);
+    }
+
+    .map-section>img.city {
+        width: calc(100% - 20px);
+        right: 0;
+        display: block;
+        margin: 0 auto;
+    }
 
 
 
 
 
 
-
-
+    .about-textbox,
+    .brands,
+    .about-textbox,
+    .range-slider,
+    .about-bottsect,
+    .printtext {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     .contact-lists,
     .map-section,
@@ -251,9 +333,39 @@
     .contact-lists .row .col-lg-2:nth-child(3) {
         margin-bottom: 25px;
     }
+
+    .brand img {
+        max-width: 80%;
+    }
+
+    .brand {
+        width: 100%;
+        height: 130px;
+    }
+
+    .brands__sect a {
+        width: 18%;
+    }
+
+    .range__line p {
+        display: none;
+    }
+}
+
+@media(max-width:900.8px) {
+    .innovative__title {
+        font-size: 18px;
+    }
 }
 
 @media(max-width: 767.8px) {
+    .map-section>img.city {
+        width: calc(100%);
+        right: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
     .main-topscreen {
         padding-left: 0;
         padding-right: 0;

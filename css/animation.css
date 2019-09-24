@@ -188,7 +188,8 @@
     animation-iteration-count: infinite;
 }
 
-.bg-el4 {
+.bg-el4,
+.bg-el5 {
     -webkit-animation-name: bg-animation1;
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
@@ -461,4 +462,45 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 0.40s;
+}
+
+.range__point.red.pulse-anim {
+    -webkit-animation-name: shadow-pulse;
+    -webkit-animation-duration: 3.5s;
+    /* -webkit-animation-iteration-count: infinite; */
+    animation-name: shadow-pulse;
+    animation-duration: 3.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes shadow-pulse {
+    0% {
+        /* box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3); */
+        box-shadow: none;
+    }
+
+    50% {
+        /* box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3); */
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3);
+    }
+}
+
+@-webkit-keyframes shadow-pulse {
+    0% {
+        /* box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3); */
+        box-shadow: none;
+    }
+
+    50% {
+        /* box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3); */
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3);
+    }
 }

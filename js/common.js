@@ -32,6 +32,30 @@ $(document).ready(function () {
         $('.header__nav').hide();
     });
 
+    // range slider
+    if ($('.range-slider').length > 0) {
+        $(function () {
+            $(document).scroll(function () {
+                var desiredHeight = $(window).height() - 100;
+                if ($(this).scrollTop() >= $('#range-top').offset().top - desiredHeight) {
+                    $(".range__linecontainer").addClass('active');
+                    $('.range__point.red').addClass('pulse-anim');
+                }
+
+            });
+        });
+        $(function () {
+            $(document).ready(function () {
+                var desiredHeight = $(window).height() - 100;
+                if ($(this).scrollTop() >= $('#range-top').offset().top - desiredHeight) {
+                    $(".range__linecontainer").addClass('active');
+                    $('.range__point.red').addClass('pulse-anim');
+                }
+
+            });
+        });
+    }
+
 
 
 

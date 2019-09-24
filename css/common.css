@@ -28,6 +28,14 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    color: #fff;
+    font-family: 'PT Mono', monospace;
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
 /* header */
 .header {
     position: absolute;
@@ -981,6 +989,8 @@ body.about-page {
     align-items: center;
     justify-content: center;
     background-color: #030a2e;
+    position: relative;
+    z-index: 2;
 }
 
 .range__point.violet {
@@ -992,10 +1002,120 @@ body.about-page {
 }
 
 .range__point.red {
+    box-shadow: 0px 0px 25px 25px rgba(235, 1, 68, 0.3);
     border-color: #eb0144;
 }
 
+.range__linecontainer {
+    position: absolute;
+    left: 12%;
+    display: block;
+    margin: 0 auto;
+    top: 19px;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    width: 0;
+    overflow: hidden;
+}
 
+.range__linecontainer.active {
+    width: 77%;
+
+    overflow: hidden;
+}
+
+.range__box {
+    position: relative;
+}
+
+.range__line {
+    height: 13px;
+    background: linear-gradient(to right, #2284e5 0%, #7f2be5 37%, #c901ad 66%, #eb0144 100%);
+    width: 877px;
+}
+
+.range__point {
+    margin-bottom: 10px;
+}
+
+.range__point+p {
+    color: #fff;
+    line-height: normal;
+    width: 170px;
+    text-align: center;
+    transform: translateX(-61px);
+    margin-bottom: 0;
+}
+
+
+.range__point.red+p {
+    font-size: 24px;
+    transform: translateX(-70px);
+    width: 190px;
+    -webkit-transform: translateX(-70px);
+    -moz-transform: translateX(-70px);
+    -ms-transform: translateX(-70px);
+    -o-transform: translateX(-70px);
+}
+
+.range-slider {
+    margin-bottom: 95px;
+}
+
+.range__line p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    line-height: 12px;
+    padding-right: 39px;
+    opacity: .5;
+}
+
+.about-bottsect h3 {
+    margin-bottom: 40px;
+}
+
+.innovative__title {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'PT Mono', monospace;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    height: 97px;
+    overflow: hidden;
+    padding-top: 28px;
+    padding-left: 20px;
+    background-image: url(../image/forward-right-arrow-button.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: calc(100% + 15px);
+}
+
+.innovative__descr {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.about-bottsect {
+    padding-bottom: 80px;
+}
+
+.bg-el5 {
+    top: 0;
+    bottom: initial;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: .1;
+}
 
 
 
