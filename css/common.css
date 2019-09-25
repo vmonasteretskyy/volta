@@ -1117,7 +1117,9 @@ body.about-page {
     opacity: .1;
 }
 
-
+.range__box-phone {
+    display: none;
+}
 
 
 
