@@ -60,5 +60,46 @@ $(document).ready(function () {
 
 
 
-});
 
+    $('.portfolio-slider').slick({
+        centerMode: true,
+        dots: true,
+        infinite: false,
+        variableWidth: true,
+        slidesToShow: 1,
+        focusOnSelect: true,
+        arrows: false,
+        initialSlide: 2,
+        asNavFor: '.slider-nav.nah'
+    });
+    $('.slider-nav.nah').slick({
+        // speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.portfolio-slider',
+        dots: false,
+        arrows: false,
+    });
+
+
+    $('.portfolio-slider-ah').slick({
+        dots: true,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        arrows: false,
+        asNavFor: '.slider-nav.ah'
+        // variableWidth: true,
+    });
+    $('.slider-nav.ah').slick({
+        speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.portfolio-slider-ah',
+        dots: false,
+        arrows: false,
+    });
+
+});
