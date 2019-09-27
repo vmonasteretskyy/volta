@@ -889,6 +889,22 @@
     main {
         min-height: calc(100vh - 30px);
     }
+
+    .popup-sect .title {
+        text-align: left;
+    }
+
+    .modal-field {
+        padding-right: 0;
+    }
+
+    .buttons-section {
+        margin-top: 35px;
+    }
+
+    .buttons-section a {
+        margin-bottom: 20px;
+    }
 }
 
 

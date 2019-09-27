@@ -674,11 +674,13 @@
                             </div>
                             <div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-1 col-md-5 offset-md-1">
                                 <div class="btn-gradient-wrap">
-                                    <button class="gradient-btn">Place a development order</button>
+                                    <span class="gradient-btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">Place a development order</span>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-5 col-md-5">
-                                <button class="transparent-btn">Add more personalized info</button>
+                                <span class="transparent-btn" data-toggle="modal" data-target="#exampleModalCenter1">Add
+                                    more personalized info</span>
                             </div>
                         </div>
                     </div>
@@ -694,7 +696,130 @@
             <p>© 2019, Volta development</p>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="image/close-modal.svg" alt="close">
+                </button>
+                <div class="popup-sect">
+                    <form action="">
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Contact</p>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" placeholder="name@gmail.com">
+                            </div>
+                        </div>
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Estimated
+                                    order price</p>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" placeholder="" value="$ 35 000">
+                            </div>
+                        </div>
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Comments</p>
+                            </div>
+                            <div class="col-md-9">
+                                <textarea placeholder="Type your message..."></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons-section">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        Telegram<br>
+                                        support
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-messenger"></i>
+                                        Messenger<br>
+                                        support
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" class="subm-pop" value="Place order">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="image/close-modal.svg" alt="close">
+                </button>
+                <div class="popup-sect">
+                    <form action="">
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Contact</p>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" placeholder="name@gmail.com">
+                            </div>
+                        </div>
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Estimated
+                                    order price</p>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" placeholder="" value="$ 35 000">
+                            </div>
+                        </div>
+                        <div class="row align-items-center modal-field">
+                            <div class="col-md-3">
+                                <p class="title">Specify
+                                    your order</p>
+                            </div>
+                            <div class="col-md-9">
+                                <textarea placeholder="Type your message..."></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons-section">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        Telegram<br>
+                                        support
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-messenger"></i>
+                                        Messenger<br>
+                                        support
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" class="subm-pop" value="Estimate my order">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.js"></script>
